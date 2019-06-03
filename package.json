@@ -23,16 +23,17 @@
   "dependencies": {
     "react": "^16.8.6",
     "react-bootstrap": "^1.0.0-beta.9",
-    "react-dom": "^16.8.6",
-    "react-perfect-scrollbar": "^1.4.4",
-    "util_css": "lefleraa/util_css"
+    "react-dom": "^16.8.6"
   },
   "peerDependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-perfect-scrollbar": "^1.4.4"
+    "react-perfect-scrollbar": "^1.4.4",
+    "util_css": "lefleraa/util_css"
   },
   "devDependencies": {
+    "react-perfect-scrollbar": "^1.4.4",
+    "util_css": "lefleraa/util_css",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",
