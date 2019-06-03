@@ -1,0 +1,95 @@
+/*/////////////////////////////////////////////////////*/
+/*                       BUTTONS                       */
+/*/////////////////////////////////////////////////////*/
+
+.btn {
+  cursor: pointer;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  border-width: 2px;
+  margin: 0;
+  .mixin-rounded(3px);
+  .mixin-transition(all 0.1s ease-in-out);
+  &.btn-primary {
+    .mixin-btn(@color-primary, @color-primary, @color-white, lighten(@color-primary, 10%), lighten(@color-primary, 10%), @color-white);
+    &-dark {
+      .mixin-btn(@color-primary-dark, @color-primary-dark, @color-white, lighten(@color-primary-dark, 10%), lighten(@color-primary-dark, 10%), @color-white);
+    }
+    &-darker {
+      .mixin-btn(@color-primary-darker, @color-primary-darker, @color-white, lighten(@color-primary-darker, 8%), lighten(@color-primary-darker, 8%), @color-white);
+    }
+  }
+  &.btn-secondary {
+    .mixin-btn(@color-secondary, @color-secondary, @color-white, lighten(@color-secondary, 10%), lighten(@color-secondary, 10%), @color-white);
+    &-dark {
+      .mixin-btn(@color-secondary-dark, @color-secondary-dark, @color-white, lighten(@color-secondary-dark, 10%), lighten(@color-secondary-dark, 10%), @color-white);
+    }
+    &-darker {
+      .mixin-btn(@color-secondary-darker, @color-secondary-darker, @color-white, lighten(@color-secondary-darker, 8%), lighten(@color-secondary-darker, 8%), @color-white);
+    }
+  }
+  &.btn-tertiary {
+    .mixin-btn(@color-tertiary, @color-tertiary, @color-white, lighten(@color-tertiary, 10%), lighten(@color-tertiary, 10%), @color-white);
+    &-dark {
+      .mixin-btn(@color-tertiary-dark, @color-tertiary-dark, @color-white, lighten(@color-tertiary-dark, 10%), lighten(@color-tertiary-dark, 10%), @color-white);
+    }
+    &-darker {
+      .mixin-btn(@color-tertiary-darker, @color-tertiary-darker, @color-white, lighten(@color-tertiary-darker, 8%), lighten(@color-tertiary-darker, 8%), @color-white);
+    }
+  }
+  &.btn-quat {
+    .mixin-btn(@color-quat, @color-quat, @color-white, lighten(@color-quat, 10%), lighten(@color-quat, 10%), @color-white);
+    &-dark {
+      .mixin-btn(@color-quat-dark, @color-quat-dark, @color-white, lighten(@color-quat-dark, 10%), lighten(@color-quat-dark, 10%), @color-white);
+    }
+    &-darker {
+      .mixin-btn(@color-quat-darker, @color-quat-darker, @color-white, lighten(@color-quat-darker, 8%), lighten(@color-quat-darker, 8%), @color-white);
+    }
+  }
+  &.btn-quin {
+    .mixin-btn(@color-quin, @color-quin, @color-white, lighten(@color-quin, 10%), lighten(@color-quin, 10%), @color-white);
+    &-dark {
+      .mixin-btn(@color-quin-dark, @color-quin-dark, @color-white, lighten(@color-quin-dark, 10%), lighten(@color-quin-dark, 10%), @color-white);
+    }
+    &-darker {
+      .mixin-btn(@color-quin-darker, @color-quin-darker, @color-white, lighten(@color-quin-darker, 8%), lighten(@color-quin-darker, 8%), @color-white);
+    }
+  }
+  &.btn-sen {
+    .mixin-btn(@color-sen, @color-sen, @color-white, lighten(@color-sen, 10%), lighten(@color-sen, 10%), @color-white);
+    &-dark {
+      .mixin-btn(@color-sen-dark, @color-sen-dark, @color-white, lighten(@color-sen-dark, 10%), lighten(@color-sen-dark, 10%), @color-white);
+    }
+    &-darker {
+      .mixin-btn(@color-sen-darker, @color-sen-darker, @color-white, lighten(@color-sen-darker, 8%), lighten(@color-sen-darker, 8%), @color-white);
+    }
+  }
+  &.btn-default {
+    .mixin-btn(@color-gray-lighter, @color-gray-lighter, @color-gray-darker, darken(@color-gray-lighter, 3%), darken(@color-gray-lighter, 3%), @color-gray-darker);
+  }
+  &.btn-subtle {
+    .mixin-btn(none, none, @color-link, none, none, darken(@color-link, 10%));
+  }
+  &.btn-outline {
+    background: none !important;
+  }
+}
+
+span.btn {
+  .mixin-shadow(none) !important;
+}
+
+.btn {
+  &-xs {
+    font-size: 11px;
+  }
+  &-sm {
+    font-size: 11px;
+  }
+  & {
+    font-size: 13px;
+  }
+  &-lg {
+    font-size: 15px;
+  }
+}

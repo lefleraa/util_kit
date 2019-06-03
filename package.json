@@ -1,0 +1,52 @@
+{
+  "name": "util_kit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "lessc": "node_modules/.bin/lessc examples/src/index.less examples/src/index.css",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --mode development",
+    "transpile": "babel kit -d dist --copy-files",
+    "prepublishOnly": "npm run transpile"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lefleraa/util_kit.git"
+  },
+  "author": "Andrew Lefler",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lefleraa/util_kit/issues"
+  },
+  "homepage": "https://github.com/lefleraa/util_kit#readme",
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-bootstrap": "^1.0.0-beta.9",
+    "react-dom": "^16.8.6",
+    "react-perfect-scrollbar": "^1.4.4",
+    "util_css": "lefleraa/util_css"
+  },
+  "peerDependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-syntax-object-rest-spread": "^6.13.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "clean-css-cli": "^4.3.0",
+    "css-loader": "^2.1.1",
+    "eslint": "^5.16.0",
+    "html-webpack-plugin": "^3.2.0",
+    "less": "^3.9.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.32.2",
+    "webpack-cli": "^3.3.2",
+    "webpack-dev-server": "^3.5.1"
+  }
+}

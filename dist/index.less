@@ -1,0 +1,60 @@
+@import (inline) "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css";
+
+@import (inline) "../node_modules/react-perfect-scrollbar/dist/css/styles.css";
+@import (less) "../node_modules/util_css/less/000_compile/_master_compile.less";
+
+@import (less) "./atoms/Btn/Btn.less";
+@import (less) "./atoms/ScrollArea/ScrollArea.less";
+@import (less) "./atoms/Tile/Tile.less";
+@import (less) "./atoms/Heading/Heading.less";
+
+@import (less) "./layout/Container/Container.less";
+@import (less) "./layout/Wrapper/Wrapper.less";
+@import (less) "./layout/Panel/Panel.less";
+
+//////////
+
+@color-primary:           #005FBB;
+@color-secondary:         #C3A22B;
+@color-tertiary:          #005FBB;
+@color-quat:              #005FBB;
+@color-quin:              #005FBB;
+@color-sen:               #005FBB;
+
+@color-primary-light:    lighten(@color-primary,   60%);
+@color-secondary-light:  lighten(@color-secondary, 60%);
+@color-tertiary-light:   lighten(@color-tertiary,  60%);
+@color-quat-light:       lighten(@color-quat,      60%);
+@color-quin-light:       lighten(@color-quin,      60%);
+
+@color-error:            #EF4035;
+@color-warning:          #FDB813;
+@color-confirm:          #24C875;
+@color-success:          #20A6FC;
+
+@color-link:              @color-primary;
+
+@border-radius-global:    10px;
+
+@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900,900i|Lora:400,400i,700,700i&display=swap');
+
+body,
+html {
+  font-family: 'Lato', sans-serif;
+  color: @color-gray-dark;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  font-family: 'Lora', serif;
+}
