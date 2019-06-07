@@ -67,6 +67,18 @@
   &.btn-default {
     .mixin-btn(@color-gray-lighter, @color-gray-lighter, @color-gray-darker, darken(@color-gray-lighter, 3%), darken(@color-gray-lighter, 3%), @color-gray-darker);
   }
+  &.btn-error {
+    .mixin-btn(@color-error, @color-error, @color-white, lighten(@color-error, 10%), lighten(@color-error, 10%), @color-white);
+  }
+  &.btn-warning {
+    .mixin-btn(@color-warning, @color-warning, @color-white, lighten(@color-warning, 10%), lighten(@color-warning, 10%), @color-white);
+  }
+  &.btn-confirm {
+    .mixin-btn(@color-confirm, @color-confirm, @color-white, lighten(@color-confirm, 10%), lighten(@color-confirm, 10%), @color-white);
+  }
+  &.btn-success {
+    .mixin-btn(@color-success, @color-success, @color-white, lighten(@color-success, 10%), lighten(@color-success, 10%), @color-white);
+  }
   &.btn-subtle {
     .mixin-btn(none, none, @color-link, none, none, darken(@color-link, 10%));
   }
