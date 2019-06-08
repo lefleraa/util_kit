@@ -27,7 +27,7 @@ const defaultProps = {
   disabled: false
 };
 
-export const Btn = ({
+const Btn = ({
   className,
   active,
   size,
@@ -76,3 +76,7 @@ export const Btn = ({
 Btn.displayName = 'Btn';
 Btn.propTypes = propTypes;
 Btn.defaultProps = defaultProps;
+
+export {
+  Btn
+};

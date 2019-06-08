@@ -11,7 +11,7 @@ const propTypes = {
 
 const defaultProps = {
   type: 'button',
-  margin: 'u-m-0',
+  margin: 'm-0',
   disabled: false,
   display: "inline-block"
 };
@@ -51,4 +51,6 @@ BtnWrap.displayName = 'BtnWrap';
 BtnWrap.propTypes = propTypes;
 BtnWrap.defaultProps = defaultProps;
 
-export default BtnWrap;
+export {
+  BtnWrap
+};
