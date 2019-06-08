@@ -36,7 +36,8 @@ var defaultProps = {
 var Tile = function Tile(_ref) {
   var className = _ref.className,
       active = _ref.active,
-      props = _objectWithoutProperties(_ref, ['className', 'active']);
+      component = _ref.component,
+      props = _objectWithoutProperties(_ref, ['className', 'active', 'component']);
 
   var classes = (0, _classnames2.default)("tile", active && "tile-active", className);
 

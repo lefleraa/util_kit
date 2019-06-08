@@ -15,6 +15,7 @@ const defaultProps = {
 const Tile = ({
   className,
   active,
+  component,
   ...props
 }) => {
 
