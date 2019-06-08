@@ -24,11 +24,13 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
 
 var propTypes = {
-  active: _propTypes2.default.bool
+  active: _propTypes2.default.bool,
+  component: _propTypes2.default.string
 };
 
 var defaultProps = {
-  active: false
+  active: false,
+  component: "div"
 };
 
 var Tile = function Tile(_ref) {
@@ -36,14 +38,21 @@ var Tile = function Tile(_ref) {
       active = _ref.active,
       props = _objectWithoutProperties(_ref, ['className', 'active']);
 
-  var classes = (0, _classnames2.default)("tile u-border-1", active && "tile-active", className);
+  var classes = (0, _classnames2.default)("tile", active && "tile-active", className);
+
+  var Tag = component;
 
   return _react2.default.createElement(
-    'div',
+    Tag,
     _extends({}, props, {
       className: classes
     }),
     props.children
   );
 };
+
+Tile.displayName = 'Tile';
+Tile.propTypes = propTypes;
+Tile.defaultProps = defaultProps;
+
 exports.Tile = Tile;

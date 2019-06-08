@@ -3,32 +3,44 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
 const propTypes = {
-  active: PropTypes.bool
+  active: PropTypes.bool,
+  component: PropTypes.string
 };
 
 const defaultProps = {
-  active: false
+  active: false,
+  component: "div"
 };
 
-export const Tile = ({
+const Tile = ({
   className,
   active,
   ...props
 }) => {
 
   const classes = classNames(
-    "tile u-border-1",
+    "tile",
     active && "tile-active",
     className
   );
 
+  const Tag = component;
+
   return (
-    <div
+    <Tag
       {...props}
       className={classes}
     >
       {props.children}
-    </div>
+    </Tag>
   )
 
+};
+
+Tile.displayName = 'Tile';
+Tile.propTypes = propTypes;
+Tile.defaultProps = defaultProps;
+
+export {
+  Tile
 };
