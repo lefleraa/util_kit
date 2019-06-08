@@ -23,7 +23,10 @@ export const Tile = ({
   );
 
   return (
-    <div className={classes}>
+    <div
+      {...props}
+      className={classes}
+    >
       {props.children}
     </div>
   )
