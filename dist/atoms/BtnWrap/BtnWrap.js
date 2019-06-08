@@ -45,7 +45,7 @@ var BtnWrap = function BtnWrap(_ref) {
       display = _ref.display,
       props = _objectWithoutProperties(_ref, ['className', 'children', 'type', 'margin', 'disabled', 'display']);
 
-  var classes = (0, _classnames2.default)('u-pos-vertical-align u-aria-focus u-cursor-pointer', 'u-text-left u-bg-none u-border-0 u-p-0', display && 'u-dis-' + display, disabled && 'disabled', margin, className);
+  var classes = (0, _classnames2.default)('u-pos-vertical-align u-aria-focus u-cursor-pointer', 'u-text-left u-bg-none u-border-0 p-0', display && 'u-dis-' + display, disabled && 'disabled', margin, className);
 
   return _react2.default.createElement(
     'button',
