@@ -87,7 +87,8 @@ var Btn = function Btn(_ref) {
   );
 };
 
-exports.Btn = Btn;
 Btn.displayName = 'Btn';
 Btn.propTypes = propTypes;
 Btn.defaultProps = defaultProps;
+
+exports.Btn = Btn;
