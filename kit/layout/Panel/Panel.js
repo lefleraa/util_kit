@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import classNames from 'classnames';
 
 import {
   Col
@@ -8,27 +10,71 @@ import {
   ScrollArea
 } from "../../atoms";
 
-export const Panel = props => {
-  let size = props.auto ? "auto" : (props.size ? undefined : (props.grid ? props.grid : undefined));
-  let orientation = props.row ? "u-width-p-12" : "u-height-p-10";
-  let position = (props.alignItems ? "align-items-" + props.alignItems : "") + " " + (props.justifyContent ? "justify-content-" + props.justifyContent : "");
-  let direction = props.direction ? "flex-" + props.direction : "flex-column";
+const propTypes = {
+  direction: PropTypes.oneOf(['column', 'row', null]),
+  size: PropTypes.number,
+  grid: PropTypes.number,
+  alignItems: PropTypes.string,
+  justifyContent: PropTypes.string,
+  row: PropTypes.bool,
+  auto: PropTypes.bool,
+};
+
+const defaultProps = {
+  direction: 'column',
+  row: false,
+  auto: false,
+};
+
+const Panel = ({
+  className,
+  children,
+  direction,
+  size,
+  grid,
+  alignItems,
+  justifyContent,
+  row,
+  auto,
+  ...props
+}) => {
+
+  const classes = classNames(
+    "d-flex flex-nowrap p-0",
+    (row ? "u-width-p-12" : "u-height-p-10"),
+    alignItems && "align-items-" + alignItems,
+    justifyContent && "justify-content-" + justifyContent,
+    direction ? "flex-" + direction : "flex-column",
+    className
+  );
+
+  let sizeNum = auto ? "auto" : (size ? undefined : (grid ? grid : undefined));
+
   return (
     <Col
-      xs={size}
-      className={`d-flex ${direction} flex-nowrap u-pos-relative u-overflow-hidden p-0 ${props.className} ${orientation}`}
+      {...props}
+      xs={sizeNum}
+      className={classNames(classes, "u-overflow-hidden u-pos-relative")}
       style={{
-        maxWidth: !props.row ? props.size : undefined,
-        minWidth: !props.row ? props.size : undefined,
-        maxHeight: props.row ? props.size : undefined,
-        minHeight: props.row ? props.size : undefined
+        maxWidth: !row ? size : undefined,
+        minWidth: !row ? size : undefined,
+        maxHeight: row ? size : undefined,
+        minHeight: row ? size : undefined
       }}
     >
       <ScrollArea
-        className={`d-flex flex-column flex-nowrap ${position}`}
+        className={classes}
       >
-        {props.children}
+        {children}
       </ScrollArea>
     </Col>
   )
 };
+
+Panel.displayName = 'Panel';
+Panel.propTypes = propTypes;
+Panel.defaultProps = defaultProps;
+
+export {
+  Panel
+}
