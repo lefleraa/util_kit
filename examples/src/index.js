@@ -22,8 +22,45 @@ import {
 const Demos = () => (
   <Wrapper>
 
+    <Panel>
+      <Panel
+        className="u-bg-primary"
+        row
+        auto
+      >
+        <div className="p-4">
+          blah
+      </div>
+      </Panel>
+      <Panel row>
+        <Panel
+          row
+          direction="row"
+        >
+          <Panel
+            className="u-bg-white"
+            size={300}
+          >
+            <div className="p-4">
+              blah
+            </div>
+          </Panel>
+          <Panel>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos atque voluptate commodi neque provident earum maxime aut dolore doloribus facilis? Laudantium repellat praesentium ad asperiores soluta reiciendis veritatis, pariatur quia.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos atque voluptate commodi neque provident earum maxime aut dolore doloribus facilis? Laudantium repellat praesentium ad asperiores soluta reiciendis veritatis, pariatur quia.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos atque voluptate commodi neque provident earum maxime aut dolore doloribus facilis? Laudantium repellat praesentium ad asperiores soluta reiciendis veritatis, pariatur quia.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos atque voluptate commodi neque provident earum maxime aut dolore doloribus facilis? Laudantium repellat praesentium ad asperiores soluta reiciendis veritatis, pariatur quia.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos atque voluptate commodi neque provident earum maxime aut dolore doloribus facilis? Laudantium repellat praesentium ad asperiores soluta reiciendis veritatis, pariatur quia.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos atque voluptate commodi neque provident earum maxime aut dolore doloribus facilis? Laudantium repellat praesentium ad asperiores soluta reiciendis veritatis, pariatur quia.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos atque voluptate commodi neque provident earum maxime aut dolore doloribus facilis? Laudantium repellat praesentium ad asperiores soluta reiciendis veritatis, pariatur quia.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos atque voluptate commodi neque provident earum maxime aut dolore doloribus facilis? Laudantium repellat praesentium ad asperiores soluta reiciendis veritatis, pariatur quia.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos atque voluptate commodi neque provident earum maxime aut dolore doloribus facilis? Laudantium repellat praesentium ad asperiores soluta reiciendis veritatis, pariatur quia.
+          </Panel>
+        </Panel>
+      </Panel>
+    </Panel>
 
-    <Panel
+    {/* <Panel
       className="u-bg-white"
       grid={2}
     >
@@ -91,7 +128,7 @@ const Demos = () => (
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut asperiores odit sit unde ducimus! Labore suscipit quam perspiciatis laudantium et numquam ratione recusandae veritatis ipsa, odit fugit minus placeat.
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut asperiores odit sit unde ducimus! Labore suscipit quam perspiciatis laudantium et numquam ratione recusandae veritatis ipsa, odit fugit minus placeat.
       </div>
-    </Panel>
+    </Panel> */}
 
 
   </Wrapper>

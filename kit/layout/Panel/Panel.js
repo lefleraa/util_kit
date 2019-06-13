@@ -44,7 +44,7 @@ const Panel = ({
     (row ? "u-width-p-12" : "u-height-p-10"),
     alignItems && "align-items-" + alignItems,
     justifyContent && "justify-content-" + justifyContent,
-    direction ? "flex-" + direction : "flex-column",
+    (direction ? "flex-" + direction : "flex-column"),
     className
   );
 
