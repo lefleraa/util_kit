@@ -5,7 +5,9 @@ import "./index.css";
 import {
   Wrapper,
   Container,
-  Panel
+  Panel,
+  TextInput,
+  Btn
 } from "../../kit"
 
 import {
@@ -46,15 +48,85 @@ const Demos = () => (
             </div>
           </Panel>
           <Panel>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos atque voluptate commodi neque provident earum maxime aut dolore doloribus facilis? Laudantium repellat praesentium ad asperiores soluta reiciendis veritatis, pariatur quia.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos atque voluptate commodi neque provident earum maxime aut dolore doloribus facilis? Laudantium repellat praesentium ad asperiores soluta reiciendis veritatis, pariatur quia.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos atque voluptate commodi neque provident earum maxime aut dolore doloribus facilis? Laudantium repellat praesentium ad asperiores soluta reiciendis veritatis, pariatur quia.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos atque voluptate commodi neque provident earum maxime aut dolore doloribus facilis? Laudantium repellat praesentium ad asperiores soluta reiciendis veritatis, pariatur quia.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos atque voluptate commodi neque provident earum maxime aut dolore doloribus facilis? Laudantium repellat praesentium ad asperiores soluta reiciendis veritatis, pariatur quia.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos atque voluptate commodi neque provident earum maxime aut dolore doloribus facilis? Laudantium repellat praesentium ad asperiores soluta reiciendis veritatis, pariatur quia.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos atque voluptate commodi neque provident earum maxime aut dolore doloribus facilis? Laudantium repellat praesentium ad asperiores soluta reiciendis veritatis, pariatur quia.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos atque voluptate commodi neque provident earum maxime aut dolore doloribus facilis? Laudantium repellat praesentium ad asperiores soluta reiciendis veritatis, pariatur quia.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos atque voluptate commodi neque provident earum maxime aut dolore doloribus facilis? Laudantium repellat praesentium ad asperiores soluta reiciendis veritatis, pariatur quia.
+            <Row className="mt-5">
+              <Col>
+                <Btn block variant="primary" size="sm">
+                  blah
+                </Btn>
+              </Col>
+              <Col>
+                <TextInput
+                  label="Email"
+                  name="email"
+                  id="login_email"
+                  value='blah blah blah'
+                  placeholder="Enter email..."
+                  onInputChange={() => console.log("blah")}
+                  size="sm"
+                  autoFocus
+                  hideLabel
+                />
+              </Col>
+            </Row>
+            <Row className="mt-5">
+              <Col>
+                <Btn block variant="primary">
+                  blah
+                </Btn>
+              </Col>
+              <Col>
+                <TextInput
+                  label="Email"
+                  name="email"
+                  id="login_email"
+                  value='blah blah blah'
+                  placeholder="Enter email..."
+                  onInputChange={() => console.log("blah")}
+                  autoFocus
+                  hideLabel
+                />
+              </Col>
+            </Row>
+            <Row className="mt-5">
+              <Col>
+                <Btn block variant="primary" size="lg">
+                  blah
+                </Btn>
+              </Col>
+              <Col>
+                <TextInput
+                  label="Email"
+                  name="email"
+                  id="login_email"
+                  value='blah blah blah'
+                  placeholder="Enter email..."
+                  onInputChange={() => console.log("blah")}
+                  size="lg"
+                  autoFocus
+                  hideLabel
+                />
+              </Col>
+            </Row>
+            <Row className="mt-5">
+              <Col>
+                <Btn block variant="primary" size="xl">
+                  blah
+                </Btn>
+              </Col>
+              <Col>
+                <TextInput
+                  label="Email"
+                  name="email"
+                  id="login_email"
+                  value='blah blah blah'
+                  placeholder="Enter email..."
+                  onInputChange={() => console.log("blah")}
+                  size="xl"
+                  autoFocus
+                  hideLabel
+                />
+              </Col>
+            </Row>
           </Panel>
         </Panel>
       </Panel>

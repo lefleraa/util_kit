@@ -3906,6 +3906,70 @@
   border-color: #d4dce4 !important;
   color: #141a20;
 }
+.btn.btn-error {
+  background: #EF4035 !important;
+  border-color: #EF4035 !important;
+  color: #FFFFFF;
+}
+.btn.btn-error.btn-outline {
+  color: #EF4035;
+}
+.btn.btn-error:hover,
+.btn.btn-error:focus,
+.btn.btn-error:active,
+.btn.btn-error.active {
+  background: #f36d64 !important;
+  border-color: #f36d64 !important;
+  color: #FFFFFF;
+}
+.btn.btn-warning {
+  background: #FDB813 !important;
+  border-color: #FDB813 !important;
+  color: #FFFFFF;
+}
+.btn.btn-warning.btn-outline {
+  color: #FDB813;
+}
+.btn.btn-warning:hover,
+.btn.btn-warning:focus,
+.btn.btn-warning:active,
+.btn.btn-warning.active {
+  background: #fdc746 !important;
+  border-color: #fdc746 !important;
+  color: #FFFFFF;
+}
+.btn.btn-confirm {
+  background: #24C875 !important;
+  border-color: #24C875 !important;
+  color: #FFFFFF;
+}
+.btn.btn-confirm.btn-outline {
+  color: #24C875;
+}
+.btn.btn-confirm:hover,
+.btn.btn-confirm:focus,
+.btn.btn-confirm:active,
+.btn.btn-confirm.active {
+  background: #42dd8f !important;
+  border-color: #42dd8f !important;
+  color: #FFFFFF;
+}
+.btn.btn-success {
+  background: #20A6FC !important;
+  border-color: #20A6FC !important;
+  color: #FFFFFF;
+}
+.btn.btn-success.btn-outline {
+  color: #20A6FC;
+}
+.btn.btn-success:hover,
+.btn.btn-success:focus,
+.btn.btn-success:active,
+.btn.btn-success.active {
+  background: #52bafd !important;
+  border-color: #52bafd !important;
+  color: #FFFFFF;
+}
 .btn.btn-subtle {
   background: none !important;
   border-color: none !important;
@@ -3942,6 +4006,38 @@ span.btn {
 }
 .btn-lg {
   font-size: 15px;
+  padding: 0.65rem 1rem;
+}
+.btn-xl {
+  font-size: 17px;
+  padding: 1rem 2rem;
+}
+/*/////////////////////////////////////////////////////*/
+/*             FORM GROUP /FORM CONTROL                */
+/*/////////////////////////////////////////////////////*/
+.form-control {
+  border: 1px solid #dde3ea;
+  font-size: 13px;
+  height: 36px;
+  padding: 0.375rem 0.75rem;
+}
+.form-control-xs {
+  font-size: 11px;
+  padding: 4px 8px;
+}
+.form-control-sm {
+  font-size: 11px;
+  height: 28px;
+}
+.form-control-lg {
+  font-size: 15px;
+  height: 48px;
+  padding: 0.65rem 1rem;
+}
+.form-control-xl {
+  font-size: 17px;
+  height: 62px;
+  padding: 1rem 2rem;
 }
 .scrollbar-container .ps__rail-x {
   display: none;
@@ -3974,6 +4070,8 @@ span.btn {
   -moz-border-radius: 10px;
   -o-border-radius: 10px;
   border-radius: 10px;
+  border: 1px solid #dde3ea;
+  outline: none;
 }
 .container-fluid {
   max-width: 1200px;

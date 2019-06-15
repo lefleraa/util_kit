@@ -40,6 +40,18 @@ Object.keys(_Btn).forEach(function (key) {
   });
 });
 
+var _TextInput = require('./TextInput/TextInput');
+
+Object.keys(_TextInput).forEach(function (key) {
+  if (key === "default" || key === "__esModule") return;
+  Object.defineProperty(exports, key, {
+    enumerable: true,
+    get: function get() {
+      return _TextInput[key];
+    }
+  });
+});
+
 var _BtnWrap = require('./BtnWrap/BtnWrap');
 
 Object.keys(_BtnWrap).forEach(function (key) {
