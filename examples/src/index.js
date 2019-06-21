@@ -50,7 +50,7 @@ const Demos = () => (
           <Panel>
             <Row className="mt-5">
               <Col>
-                <Btn block variant="primary" size="sm">
+                <Btn block variant="primary" size="sm" to="#">
                   blah
                 </Btn>
               </Col>
@@ -70,7 +70,7 @@ const Demos = () => (
             </Row>
             <Row className="mt-5">
               <Col>
-                <Btn block variant="primary">
+                <Btn block variant="primary" to="#">
                   blah
                 </Btn>
               </Col>
@@ -89,7 +89,7 @@ const Demos = () => (
             </Row>
             <Row className="mt-5">
               <Col>
-                <Btn block variant="primary" size="lg">
+                <Btn block variant="primary" size="lg" to="#">
                   blah
                 </Btn>
               </Col>
@@ -109,7 +109,7 @@ const Demos = () => (
             </Row>
             <Row className="mt-5">
               <Col>
-                <Btn block variant="primary" size="xl">
+                <Btn block variant="primary" size="xl" to="#">
                   blah
                 </Btn>
               </Col>

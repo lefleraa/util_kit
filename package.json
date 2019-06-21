@@ -28,10 +28,12 @@
   "peerDependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-router-dom": "^5.0.1",
     "react-perfect-scrollbar": "^1.4.4",
     "util_css": "lefleraa/util_css"
   },
   "devDependencies": {
+    "react-router-dom": "^5.0.1",
     "react-perfect-scrollbar": "^1.4.4",
     "util_css": "lefleraa/util_css",
     "babel-cli": "^6.26.0",

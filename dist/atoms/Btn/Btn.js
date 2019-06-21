@@ -19,11 +19,14 @@ var _classnames = require('classnames');
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
+var _reactRouterDom = require('react-router-dom');
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
 
 var propTypes = {
+  to: _propTypes2.default.string,
   type: _propTypes2.default.oneOf(['button', 'reset', 'submit', null]),
   variant: _propTypes2.default.string,
   size: _propTypes2.default.string,
@@ -60,15 +63,17 @@ var Btn = function Btn(_ref) {
       isModal = _ref.isModal,
       children = _ref.children,
       naked = _ref.naked,
-      props = _objectWithoutProperties(_ref, ['className', 'active', 'size', 'block', 'disabled', 'variant', 'uppercase', 'newTab', 'isModal', 'children', 'naked']);
+      to = _ref.to,
+      props = _objectWithoutProperties(_ref, ['className', 'active', 'size', 'block', 'disabled', 'variant', 'uppercase', 'newTab', 'isModal', 'children', 'naked', 'to']);
 
-  var Tag = props.href ? 'a' : naked ? 'span' : props.onClick ? 'button' : 'span';
+  var Tag = to ? _reactRouterDom.NavLink : props.href ? 'a' : naked ? 'span' : props.onClick ? 'button' : 'span';
 
   var classes = (0, _classnames2.default)("u-cursor-pointer btn", active && "active", size && "btn-" + size, block && "btn-block", disabled && "disabled", variant && 'btn-' + variant, uppercase ? "u-text-uppercase" : "u-text-capitalize", className);
 
   return _react2.default.createElement(
     Tag,
     _extends({}, props, {
+      to: to,
       className: classes,
       target: newTab && props.href ? props.href : undefined,
       'aria-disabled': disabled

@@ -2,7 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
+import {
+  NavLink
+} from 'react-router-dom';
+
 const propTypes = {
+  to: PropTypes.string,
   type: PropTypes.oneOf(['button', 'reset', 'submit', null]),
   variant: PropTypes.string,
   size: PropTypes.string,
@@ -39,10 +44,11 @@ const Btn = ({
   isModal,
   children,
   naked,
+  to,
   ...props
 }) => {
 
-  const Tag = props.href ? 'a' : (naked ? 'span' : (props.onClick ? 'button' : 'span'));
+  const Tag = to ? NavLink : (props.href ? 'a' : (naked ? 'span' : (props.onClick ? 'button' : 'span')));
 
   const classes = classNames(
     "u-cursor-pointer btn",
@@ -58,6 +64,7 @@ const Btn = ({
   return (
     <Tag
       {...props}
+      to={to}
       className={classes}
       target={(newTab && props.href) ? props.href : undefined}
       aria-disabled={disabled}
