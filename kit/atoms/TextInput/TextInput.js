@@ -43,6 +43,7 @@ const TextInput = ({
   hideFeedback,
   hideLabel,
   onInputChange,
+  className,
   ...props
 }) => {
   const feedbackClasses = classNames(
@@ -52,6 +53,7 @@ const TextInput = ({
 
   const classes = classNames(
     "form-group",
+    className,
     feedbackClasses
   );
 
@@ -63,7 +65,7 @@ const TextInput = ({
 
   return (
     <div className={classes}>
-      {!hideLabel &&
+      {(!hideLabel && label) &&
         <label htmlFor={id}>
           {label}
         </label>

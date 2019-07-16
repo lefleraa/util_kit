@@ -66,18 +66,19 @@ var TextInput = function TextInput(_ref) {
       hideFeedback = _ref.hideFeedback,
       hideLabel = _ref.hideLabel,
       onInputChange = _ref.onInputChange,
-      props = _objectWithoutProperties(_ref, ['id', 'type', 'name', 'value', 'error', 'success', 'label', 'placeholder', 'size', 'hideFeedback', 'hideLabel', 'onInputChange']);
+      className = _ref.className,
+      props = _objectWithoutProperties(_ref, ['id', 'type', 'name', 'value', 'error', 'success', 'label', 'placeholder', 'size', 'hideFeedback', 'hideLabel', 'onInputChange', 'className']);
 
   var feedbackClasses = (0, _classnames2.default)(error && "is-invalid", success && "is-valid");
 
-  var classes = (0, _classnames2.default)("form-group", feedbackClasses);
+  var classes = (0, _classnames2.default)("form-group", className, feedbackClasses);
 
   var inputClasses = (0, _classnames2.default)("form-control", size && 'form-control-' + size, feedbackClasses);
 
   return _react2.default.createElement(
     'div',
     { className: classes },
-    !hideLabel && _react2.default.createElement(
+    !hideLabel && label && _react2.default.createElement(
       'label',
       { htmlFor: id },
       label

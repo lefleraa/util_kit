@@ -4087,6 +4087,9 @@ span.btn {
 /*/////////////////////////////////////////////////////*/
 /*             FORM GROUP /FORM CONTROL                */
 /*/////////////////////////////////////////////////////*/
+.form-group {
+  margin: 0;
+}
 .form-control {
   border: 1px solid #dde3ea;
   font-size: 13px;
