@@ -4114,6 +4114,10 @@ span.btn {
   height: 62px;
   padding: 1rem 1.2rem;
 }
+.scrollbar-container {
+  width: 100%;
+  min-width: 100%;
+}
 .scrollbar-container .ps__rail-x {
   display: none;
 }
