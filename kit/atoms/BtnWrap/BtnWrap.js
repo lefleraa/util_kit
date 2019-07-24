@@ -27,9 +27,9 @@ const BtnWrap = ({
 }) => {
 
   const classes = classNames(
-    'u-pos-vertical-align u-aria-focus u-cursor-pointer',
+    'u-pos-vertical-align u-aria-focus u-cursor-pointer btn-wrap',
     'u-text-left u-bg-none u-border-0 p-0',
-    display && `u-dis-${display}`,
+    display && `d-${display}`,
     disabled && 'disabled',
     margin,
     className
