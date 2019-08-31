@@ -34,7 +34,8 @@ var propTypes = {
   alignItems: _propTypes2.default.string,
   justifyContent: _propTypes2.default.string,
   row: _propTypes2.default.bool,
-  auto: _propTypes2.default.bool
+  auto: _propTypes2.default.bool,
+  containerRef: _propTypes2.default.func
 };
 
 var defaultProps = {
@@ -53,7 +54,8 @@ var Panel = function Panel(_ref) {
       justifyContent = _ref.justifyContent,
       row = _ref.row,
       auto = _ref.auto,
-      props = _objectWithoutProperties(_ref, ['className', 'children', 'direction', 'size', 'grid', 'alignItems', 'justifyContent', 'row', 'auto']);
+      containerRef = _ref.containerRef,
+      props = _objectWithoutProperties(_ref, ['className', 'children', 'direction', 'size', 'grid', 'alignItems', 'justifyContent', 'row', 'auto', 'containerRef']);
 
   var classes = (0, _classnames2.default)("d-flex flex-nowrap p-0", row ? "u-width-p-12" : "u-height-p-10", alignItems && "align-items-" + alignItems, justifyContent && "justify-content-" + justifyContent, direction ? "flex-" + direction : "flex-column", className);
 
@@ -74,6 +76,7 @@ var Panel = function Panel(_ref) {
     _react2.default.createElement(
       _atoms.ScrollArea,
       {
+        containerRef: containerRef,
         className: classes
       },
       children

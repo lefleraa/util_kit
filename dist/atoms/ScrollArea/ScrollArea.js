@@ -23,13 +23,15 @@ function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in ob
 
 var ScrollArea = function ScrollArea(_ref) {
   var className = _ref.className,
-      props = _objectWithoutProperties(_ref, ['className']);
+      containerRef = _ref.containerRef,
+      props = _objectWithoutProperties(_ref, ['className', 'containerRef']);
 
   var classes = (0, _classnames2.default)(className);
 
   return _react2.default.createElement(
     _reactPerfectScrollbar2.default,
     {
+      containerRef: containerRef,
       className: className
     },
     props.children

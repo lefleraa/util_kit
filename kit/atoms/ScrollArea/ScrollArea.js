@@ -5,6 +5,7 @@ import PerfectScrollbar from 'react-perfect-scrollbar';
 
 export const ScrollArea = ({
   className,
+  containerRef,
   ...props
 }) => {
 
@@ -14,6 +15,7 @@ export const ScrollArea = ({
 
   return (
     <PerfectScrollbar
+      containerRef={containerRef}
       className={className}
     >
       {props.children}
