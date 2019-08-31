@@ -46,7 +46,6 @@ var defaultProps = {
 
 var Panel = function Panel(_ref) {
   var className = _ref.className,
-      containerRef = _ref.containerRef,
       children = _ref.children,
       direction = _ref.direction,
       size = _ref.size,
@@ -55,6 +54,7 @@ var Panel = function Panel(_ref) {
       justifyContent = _ref.justifyContent,
       row = _ref.row,
       auto = _ref.auto,
+      containerRef = _ref.containerRef,
       props = _objectWithoutProperties(_ref, ['className', 'children', 'direction', 'size', 'grid', 'alignItems', 'justifyContent', 'row', 'auto', 'containerRef']);
 
   var classes = (0, _classnames2.default)("d-flex flex-nowrap p-0", row ? "u-width-p-12" : "u-height-p-10", alignItems && "align-items-" + alignItems, justifyContent && "justify-content-" + justifyContent, direction ? "flex-" + direction : "flex-column", className);

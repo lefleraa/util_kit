@@ -18,6 +18,7 @@ const propTypes = {
   justifyContent: PropTypes.string,
   row: PropTypes.bool,
   auto: PropTypes.bool,
+  containerRef: PropTypes.func,
 };
 
 const defaultProps = {
@@ -36,6 +37,7 @@ const Panel = ({
   justifyContent,
   row,
   auto,
+  containerRef,
   ...props
 }) => {
 
@@ -63,6 +65,7 @@ const Panel = ({
       }}
     >
       <ScrollArea
+        containerRef={containerRef}
         className={classes}
       >
         {children}
