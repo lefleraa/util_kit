@@ -40,6 +40,7 @@ const BtnWrap = ({
       {...props}
       type={type}
       className={classes}
+      disabled={disabled}
       aria-disabled={disabled}
     >
       {children}

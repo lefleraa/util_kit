@@ -67,6 +67,7 @@ const Btn = ({
       to={to}
       className={classes}
       target={(newTab && props.href) ? props.href : undefined}
+      disabled={disabled}
       aria-disabled={disabled}
     >
       {children}
