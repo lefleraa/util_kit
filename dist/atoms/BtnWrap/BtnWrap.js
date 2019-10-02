@@ -53,6 +53,7 @@ var BtnWrap = function BtnWrap(_ref) {
     _extends({}, props, {
       type: type,
       className: classes,
+      disabled: disabled,
       'aria-disabled': disabled
     }),
     children
